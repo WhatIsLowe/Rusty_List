@@ -1,0 +1,7 @@
+[package]
+name = "rusty_list"
+version = "0.1.0"
+authors = ["Novikov Vlad <iam.dev.op.vlad@gmail.com>"]
+edition = "2021"
+
+[dependencies]
