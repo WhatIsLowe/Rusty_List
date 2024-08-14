@@ -15,7 +15,7 @@ To use `rusty_list` in your Rust project, add the following to your `Cargo.toml`
 
 ```toml
 [dependencies]
-rusty_list = { git = "https://github.com/WhatIsLowe/Rusty_List", branch="main" }
+rusty_list = { git = "https://github.com/WhatIsLowe/Rusty_List", branch="master" }
 ```
 
 ## Usage
