@@ -17,7 +17,7 @@ Add `rusty_list` to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-rusty_list = { git = "https://github.com/WhatIsLowe/Rusty_List", branch = "master" }
+rusty_list = { git = "https://github.com/WhatIsLowe/Rusty_List", branch = "main" }
 ```
 
 ## Example
