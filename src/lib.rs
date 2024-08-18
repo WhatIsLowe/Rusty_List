@@ -31,6 +31,7 @@ impl List {
     /// ```
     /// let mut list = rusty_list::List::new();
     /// list.insert(42);
+    /// assert_eq!(list.get::<i32>(0), Some(&42));
     /// ```
     pub fn insert<T: Into<ListItem>>(&mut self, value: T) {
         self.items.push(value.into());
