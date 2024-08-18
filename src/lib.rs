@@ -74,6 +74,24 @@ impl List {
         }
     }
 
+
+    /// Removes the item at the specified index
+    /// 
+    /// # Examples
+    /// 
+    /// ```
+    /// let mut list = rusty_list::List::new();
+    /// list.insert(42);
+    /// list.insert("leet".to_string());
+    /// list.remove(0);
+    /// assert_eq!(list.get::<String>(0), Some(&String::from("leet")));
+    /// ```
+    pub fn remove(&mut self, index: usize) {
+        if index < self.items.len() {
+            _ = self.items.remove(index);
+        }
+    }
+
     /// Retrieves a reference to the item at the specified index if the type matches.
     ///
     /// Returns `None` if the index is out of bounds or the type doesn't match.
@@ -148,6 +166,10 @@ impl List {
         self.items.len()
     }
 
+    pub fn is_empty(&self) -> bool {
+        self.items.is_empty()
+    }
+
     /// Clears the list, removing all items.
     ///
     /// # Examples
@@ -160,6 +182,12 @@ impl List {
     /// ```
     pub fn clear(&mut self) {
         self.items.clear();
+    }
+}
+
+impl Default for List {
+    fn default() -> Self {
+        Self::new()
     }
 }
 
