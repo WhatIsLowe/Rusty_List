@@ -61,7 +61,11 @@ impl List {
     /// list.replace(0, 43).unwrap();
     /// assert_eq!(list.get::<i32>(0), Some(&43));
     /// ```
-    pub fn replace<T: Into<ListItem>>(&mut self, index: usize, value: T) -> Result<(), &'static str> {
+    pub fn replace<T: Into<ListItem>>(
+        &mut self,
+        index: usize,
+        value: T,
+    ) -> Result<(), &'static str> {
         if index < self.items.len() {
             self.items[index] = value.into();
             Ok(())
